@@ -1,17 +1,69 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
-.background{
-    background: url(../images/background.jpg) no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    position: absolute;
+.background {
+  background: url(../images/background.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-start;
 }
-.date{
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: fit-content;
-    position: abs;
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 90%;
+}
+.date {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 20px;
+}
+.heading {
+  padding: 60px;
+}
+.heading > u {
+  font-size: 45px;
+  color: #cfc547;
+  text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
+    -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+}
+.list {
+  border: 1px solid red;
+  border-radius: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin: 10px;
+}
+.newTask {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+button {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  background-color: crimson;
+  color: white;
+}
+.check {
+  width: 30px;
+  height: 30px;
+}
+.strikeThrough {
+  text-decoration: line-through;
 }

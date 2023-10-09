@@ -1,0 +1,15 @@
+/* mobile */
+
+@media (max-width : 768px){
+  .first{
+    display: flex;
+    flex-flow: column nowrap;
+    text-wrap: nowrap;
+  }
+}
+
+/* tablet */
+
+@media (min-width : 769px) and (max-width : 1200px){
+
+}
